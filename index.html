@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Julian Rosenblum">
+
+  <title>Julian Rosenblum | Tetreweled</title>
+
+  <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+  <link href="http://julianrosenblum.com/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Game CSS -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="http://julianrosenblum.com/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Tetreweled <small>by <a href="http://julianrosenblum.com">Julian Rosenblum</a></small></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="well app">
+            <canvas width="500" height="500" id="canvas">Your browser does not support canvas.</canvas>
+            <div id="buttons">
+              <div id="start" class="btn btn-primary">Start</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="well">
+            <p>Blocks made up of jewels fall and are maneuvered Tetris-style while Jewels are cleared by matching three or more in a row Bejeweled-style.  Get as many points as you can by clearing matches before you hit the top.  When jewels are cleared, only the jewels directly above them will fall.  Other jewels will remain floating like in Tetris.</p>
+            <p>CONTROLS</p>
+            <p>Use the 'A' and 'D' keys to move the block left and right respectively.  Use the 'W' key to rotate the block.  Hold the 'S' key to make the block drop more quickly.  Use the spacebar to drop the block completely.  Click on two adjacent jewels to swap them.  Jewels will only swap if a match is formed.</p>
+            <p>SCORING AND MULTIPLIER</p>
+            <p>Points are awarded whenever a match is made and jewels are cleared.  If a block drops causing a match to be formed, the score multiplier increases.  Subsequently, if a block drops and a match is not formed, the multiplier will decrease again. HINT: When your multiplier is high, try to make as many matches as possible before it goes back down.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery -->
+  <script src="http://julianrosenblum.com/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="http://julianrosenblum.com/js/bootstrap.min.js"></script>
+
+  <!-- Game Scripts -->
+  <script src="http://julianrosenblum.com/js/canvasplus.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>
